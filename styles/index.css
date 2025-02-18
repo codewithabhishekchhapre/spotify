@@ -29,9 +29,9 @@
      gap: 10px;
 }
 .search > i{
-     font-size: 35px;
+     font-size: 30px;
      border-radius: 50%;
-     padding: 10px;
+     padding: 5px;
      color:white;
 }
 .search .searchtab{
@@ -47,14 +47,14 @@
      width: 350px;
      background-color: transparent;
      border: none;
-     font-size: 22px;
+     font-size: 20px;
 }
 input:focus{
      border: none;
      outline: none;
 }
 .search .searchtab i{
-     font-size: 30px;
+     font-size: 24px;
 }
 
 .main-navbar .menu{
@@ -70,7 +70,7 @@ input:focus{
 }
 
 .menu ul li{
-     font-size: 20px;
+     font-size: 18px;
      font-weight: 600;
      color: gray;
 }
@@ -79,7 +79,7 @@ input:focus{
      padding: 8px 25px;
      color: white;
      background-color: transparent;
-     font-size: 18px;
+     font-size: 16px;
      border: none;
      margin-right: 5px;
      border-radius: 30px;
@@ -94,7 +94,6 @@ input:focus{
 
 .maincontent .sidenavbar{
      width: 24%;
-     height: 100%;
      background-color:rgb(18,18,18);
      padding: 10px;
      border-radius: 15px;
@@ -105,18 +104,14 @@ input:focus{
      justify-content: space-between;
 }
 .head i{
-     font-size: 22px;
+     font-size: 20px;
      margin-right: 5px;
 }
 .head h3{
      font-size: 25px;
      color: rgb(205, 205, 205);
 }
-.maincontent .content{
-     width: 76%;
-     height: 100%;
-     /* background-color: teal; */
-}
+
 .profile{
      display: flex;
      flex-direction: column;
@@ -156,4 +151,87 @@ input:focus{
      width: 100px;
      border-radius: 50%;
      object-fit: cover;
+}
+
+.sidefooter{
+     margin-top: 25px;
+     width: 80%;
+     display: flex  ;
+     gap: 15px;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+}
+.sidefooter p{
+     line-height: 5px;
+}
+
+.maincontent .content{
+     width: 75%;
+     /* height: 100%; */
+     /* background-color: teal; */
+     margin: 10px;
+     border-radius: 5px;
+     background:linear-gradient( 40deg,#101010 40%,#1e1e1e);
+     padding: 25px 15px;
+}
+
+.artist{
+     /* display: flex; */
+}
+
+.artist .all{
+     display: flex;
+     justify-content: space-between;
+}
+.all_artist{
+     margin-top: 15px;
+     display: flex;
+     gap: 25px;
+}
+.artistprofile{
+     height: 220px;
+     /* background-color: red; */
+    
+     padding: 10px 5px;
+     border-radius: 5px;
+     /* display: flex; */
+     /* flex-direction: column; */
+     /* justify-content: center; */
+     /* align-items: center; */
+}
+.artistimg{
+     position: relative;
+}
+
+.artistimg .playbtn{
+     height: 50px;
+     width: 50px;
+     position: absolute;
+     right: 0px;
+     bottom: 20%;
+     background-color: rgb(30,215,96);
+     border-radius: 50%;
+     display: none;
+    
+}
+.playbtn i{
+     color: black;
+     font-size: 35px;
+}
+
+.artistprofile img{
+     height: 150px;
+     width: 150px;
+     border-radius: 50%;
+     margin-bottom: 15px;
+}
+.artistprofile:hover{
+ background:linear-gradient( 180deg,#101010 40%,#1e1e1e);
+}
+
+.artistprofile:hover  .playbtn{
+     display: flex;
+     justify-content: center;
+     align-items: center;
 }
